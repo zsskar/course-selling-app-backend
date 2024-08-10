@@ -323,7 +323,7 @@ router.get("/students", auth_2.authenticateJwt, (req, res) => __awaiter(void 0, 
             res.status(200).json({ data: students });
         }
         else {
-            res.status(404).json({ data: "no students found." });
+            res.json({ data: "no students found." });
         }
     }
     catch (error) {
